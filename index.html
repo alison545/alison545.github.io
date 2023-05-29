@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saboréalo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png">
+
+</head>
+<body>
+    <!-- SECCION INICIO -->
+    <section id="inicio">
+        <header>
+            <div class="contenido-header">
+                <div class="logo">
+                    <h1>Saboréalo</h1>
+                </div>
+                <nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="#inicio" onclick="seleccionar()">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Inicio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#menu" onclick="seleccionar()">
+                                <i class="fa-solid fa-receipt"></i>
+                                <span>Menu</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#platos" onclick="seleccionar()">
+                                <i class="fa-solid fa-utensils"></i>
+                                <span>Platos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contacto" onclick="seleccionar()">
+                                <i class="fa-solid fa-pen"></i>
+                                <span>Contacto</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a> 
+                </div>
+                <div class="nav-responsive" id="bar" onclick="mostrarOcultarMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </header>
+        <!-- Carrusel -->
+        <div class="carrusel">
+            <div class="gallery js-flickity">
+                <div class="gallery-cell" >
+                    <img src="img/restaurante.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/Img1.jpg" alt="">
+                </div>
+                <div class="gallery-cell">
+                    <img src="img/Img2.jpg" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h2>Bienvenido a Saborealo</h2>
+                <p>Un restaurante dedicado, encontranos en redes sociales</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION MENU -->
+    <section id="menu">
+        <h2>Menu</h2>
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/hamburguesas.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Hamburguesas</h3>
+                    <ul>
+                        <li>Doble carne</li>
+                        <li>De 4 quesos</li>
+                        <li>Con jamon y tomate</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/platos.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Platos principales</h3>
+                    <ul>
+                        <li>Carne con arroz</li>
+                        <li>Milanesa con pure</li>
+                        <li>Albondigas de carne</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/pastas.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Pastas</h3>
+                    <ul>
+                        <li>Ravioles</li>
+                        <li>Ñoquis con salsa de tomate</li>
+                        <li>Fideos con carne y salsa</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="item">
+                <div class="icono">
+                    <img src="img/postre.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Postres</h3>
+                    <ul>
+                        <li>Porcion de torta</li>
+                        <li>Flan</li>
+                        <li>Muffins de chocolate o vainilla</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <div class="icono">
+                    <img src="img/bebidas.png" alt="">
+                </div>
+                <div class="info">
+                    <h3>Bebidas</h3>
+                    <ul>
+                        <li>Cerveza Lager</li>
+                        <li>Coca cola</li>
+                        <li>Sprite</li>
+                        <li>Tragos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION PLATOS -->
+    <section id="platos">
+        <h2>Platos</h2>
+
+        <div class="fila">
+            <div class="item">
+                <img src="img/burger.jpg" alt="">
+                <p>Hamburguesa de 4 quesos</p>
+            </div>
+            <div class="item">
+                <img src="img/ravioles.jpg" alt="">
+                <p>Ravioles con salsa</p>
+            </div>
+            <div class="item">
+                <img src="img/milanesa-con-pure.jpg" alt="">
+                <p>Milanesa con pure</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="item">
+                <img src="img/chocotortajpg.jpg" alt="">
+                <p>Chocotorta</p>
+            </div>
+            <div class="item">
+                <img src="img/cerveza.jpg" alt="">
+                <p>Cerveza Lager</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--SECCION CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form id="myForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          
+            <input type="submit" id="btnEnviar" value="Enviar">
+        </form>
+    </section>
+
+    <!-- SECCION PIE DE PAGINA -->
+    <section id="final">
+        <div class="fila">
+            <div class="col">
+                <h1>Saboréalo</h1>
+            </div>
+            <div class="col">
+                <h3>Menú</h3>
+                <a href="#inicio">Inicio</a>
+                <a href="#menu">Menu</a>
+                <a href="#platos">Platos</a>
+                <a href="#contacto">Blog</a>
+            </div>
+            <div class="col">
+                <h3>Chefs</h3>
+                <a href="#">Martin </a>
+                <a href="#">Alison Morel</a>
+            </div>
+            <div class="col">
+                <h3>Social Media</h3>
+                <div class="media">
+                    <i class="fa-brands fa-twitter"></i> <a href="#">Twitter</a>
+                </div>
+                <div class="media">
+                    <i class="fa-brands fa-instagram"></i> <a href="#">Instagram</a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>Contacto</h3>
+                <input type="text" placeholder="Tu correo">
+                <input type="submit" class="enviar" value="Enviar">
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
